@@ -5,17 +5,18 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="RepoAudit is an open-source tool for repository quality assessment and bug management.">
-  <meta name="keywords" content="RepoAudit, Repository Audit, Bug Report, Code Quality, Open Source">
+  <meta name="description" content="ToDiff is an open-source tool for validating interior gateway routing protocols.">
+  <meta name="keywords" content="ToDiff, Routing Protocols, Interior Gateway Protocols, Differential Valida-
+  tion, Topology Synthesis">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RepoAudit</title>
+  <title>ToDiff</title>
   <!-- Optional Google Analytics -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="../cdn.jsdelivr.net/gh/jpswalsh/academicons%401/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
   <link rel="icon" href="static/images/favicon.html">
   <script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -83,16 +84,16 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1">RepoAudit: Auditing Code As Human</h1>
+          <h1 class="title is-3">ToDiff: Topology-Guided Routing Protocol Validation</h1>
           <div class="is-size-5" style="margin-top: 1rem;">
-            An autonomous LLM-agent designed for large-scale, repository-level code auditing.
+            Autonomous Differential Testing for Routing Protocols via Equivalent Topologies
           </div>
           <div class="buttons is-centered" style="margin-top: 1.5rem;">
-            <a href="https://arxiv.org/abs/2501.18160" class="button is-normal is-rounded is-dark" target="_blank">
-              <span class="icon"><i class="ai ai-arxiv"></i></span>
+            <a href="https://ccs2025a.hotcrp.com/doc/ccs2025a-paper579.pdf" class="button is-normal is-rounded is-dark" target="_blank">
+              <span class="icon"><i class="ai ai-acm"></i></span>
               <span>Paper</span>
             </a>
-            <a href="https://github.com/PurCL/RepoAudit" class="button is-normal is-rounded is-dark" target="_blank">
+            <a href="https://github.com/Shbinging/topo-fuzz.git" class="button is-normal is-rounded is-dark" target="_blank">
               <span class="icon"><i class="fab fa-github"></i></span>
               <span>Code</span>
             </a>
@@ -103,21 +104,23 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
   <div class="container is-max-desktop">
     <div class="box">
-      <p><span style="font-size: 2em;">😵‍💫</span> Are you still troubled by code security issues?</p>
-      <p><span style="font-size: 2em;">😵‍💫</span> Have you ever complained that program testing misses countless bugs?</p>
-      <p><span style="font-size: 2em;">😵‍💫</span> Have you found static code analysis tools too cumbersome to use, especially when they only support a limited set of bug types and languages like C/C++?</p>
-      <p><span style="font-size: 2em;">🍺</span> If you face these challenges, RepoAudit is your ultimate lifesaver!</p>
+      <p><span style="font-size: 2em;">😠</span> Are you frustrated by unnoticed routing protocol issues causing network instability?</p>
+      <p><span style="font-size: 2em;">😠</span> Have you ever complained exsisting testing methods such as fuzzing misses countless bugs?</p>
+      <p><span style="font-size: 2em;">😠</span> Have you found it requires too much manual effort to test routing protocols — like handcrafting topologies or calculating routing tables by hand?</p>
+      <p><span style="font-size: 2em;">🍀</span> Meet <strong>ToDiff</strong> — your go-to tool for next-generation routing protocol validation!</p>
       <p>
-        <span style="font-size: 2.5em;">🎯</span> Our mission is to enable automated code auditing with minimal human intervention. As a multi-agent framework blending the core principles of traditional static analysis with advanced large language models, RepoAudit reinvents code auditing by delivering:
+        <span style="font-size: 2.5em;">🎯</span> At ToDiff, we are dedicated to revolutionizing routing protocol validation with automated differential testing. By leveraging dedicated network generation algorithm network generation with equivalent topology synthesis, ToDiff detects hidden bugs in routing protocol implementations with unprecedented efficiency:
       </p>
       <div class="content">
         <ul>
-          <li><strong>Build-Free:</strong> No need to compile your programs—detect potential bugs during development, even in incomplete code generated by AI tools like Copilot.</li>
-          <li><strong>Easy-to-Customize:</strong> Forget about dealing with compiler internals like LLVM IR. Simply write custom prompts. Few-shot chain-of-thought (CoT) prompting is all you need.</li>
-          <li><strong>Multi-Lingual Support:</strong> Analyze code in multiple languages with ease. RepoAudit currently supports C/C++, Java, and Go, with additional language support on the horizon.</li>
+          <li><strong>Oracle-Free:</strong> No need to build complex topologies or calculate expected results — ToDiff auto-generates equivalent programs and detects bugs via differential analysis.</li>
+          <li><strong>Fully Automated:</strong> From random topology generation to differential analysis, the entire process runs with minimal human efforts and scales to hundreds of test cases per hour.
+          <li><strong>Bug Hunter Supreme:</strong> With broad test coverage, ToDiff found 30+ zero-day bugs, many causing serious issues like traffic blackholes.
+          <li><strong>Multi-Protocol Support:</strong> Testing multiple protocols in interior gateway routing protocol families with ease. ToDiff currently supports OSPF, IS-IS, RIP, BABEL, and OpenFabric, with additional protocol support on the horizon. </li>
+          <li><strong>Easy-to-Customize:</strong> Comes with a user-friendly framework and detailed open documentation to help users test new protocols with ease. </li>
         </ul>
         <p>
-          For a brand-new code auditing experience, check out the following demo videos and have a quick start.
+          Want to see it in action? Check out our demo videos and see how ToDiff validates routing protocol implementations.
         </p>
       </div>
     </div>
@@ -148,33 +151,18 @@ document.addEventListener('DOMContentLoaded', () => {
       <ul style="list-style: none; padding-left: 0;">
         <li style="margin-bottom: 0.5rem;">
           <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
-          <strong>(04/2025):</strong>
-          RepoAudit now can support detecting functional bugs in network protocol implementations.
-        </li>
-        <li style="margin-bottom: 0.5rem;">
-          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
-          <strong>(04/2025):</strong>
-          We have open-sourced the agent <strong>dfbscan</strong>, a data-flow bug detector in RepoAudit (<a href="https://github.com/PurCL/RepoAudit">Link</a>). Stay tuned as we will open-source other agents (such as <strong>bugscan</strong>, <strong>patinf</strong>, and <strong>docdiff</strong>) in RepoAudit very soon.
-        </li>
-        <li style="margin-bottom: 0.5rem;">
-          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
           <strong>(03/2025):</strong>
-          RepoAudit detected a memory leak in Uber's geospatial indexing system <a href="https://github.com/uber/h3" target="_blank">h3</a>. The <a href="https://github.com/uber/h3/pull/976" target="_blank">bug</a> has been confirmed and the patch has been merged by the developers.
-        </li>
-        <li style="margin-bottom: 0.5rem;">
-          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
-          <strong>(02/2025):</strong>
-          We published the preprint of RepoAudit on arXiv. Here is the <a href="https://arxiv.org/abs/2501.18160" target="_blank">link</a> to the paper.
+          ToDiff now can support detecting more protocols including RIP, BABEL and OpenFabric. 
         </li>
         <li style="margin-bottom: 0.5rem;">
           <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
           <strong>(01/2025):</strong>
-          We were invited to deliver a talk to the CodeQL team @ GitHub. Here is the <a href="https://www.youtube.com/watch?v=nOS56VC0FTQ" target="_blank">recording</a> of the talk.
+          Our preprint paper <h2><em>Validating Interior Gateway Routing Protocols via Equivalent Topology Synthesis</em></h2> is out!
         </li>
         <li style="margin-bottom: 0.5rem;">
           <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
-          <strong>(09/2024):</strong>
-          Two papers on AI code auditing were accepted by <a href="https://aclanthology.org/2024.findings-emnlp.217/" target="_blank">Findings of EMNLP'24</a> and <a href="https://neurips.cc/virtual/2024/poster/95227" target="_blank">NeurIPS'24</a>.
+          <strong>(12/2024):</strong>
+          ToDiff detects 26 zero-day bugs in OSPF and ISIS protocols.
         </li>
       </ul>
     </div>
