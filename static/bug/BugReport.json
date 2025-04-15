@@ -1,0 +1,336 @@
+[
+    {
+      "repo_name": "OSPF",
+      "bug_type": "Incorrect setting internal states about area structure",
+      "patch/issue link": "https://github.com/FRRouting/frr/pull/17101",
+      "status": "Fixed",
+      "date": "2024-10-15",
+      "Bug Num": "1",
+      "sort_weight": 20
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect setting internal states about nssa status",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/17134",
+        "status": "Fixed",
+        "date": "2024-10-18",
+        "Bug Num": "1",
+        "sort_weight": 20
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect setting internal states about area structure",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/17183",
+        "status": "Fixed",
+        "date": "2024-10-23",
+        "Bug Num": "1",
+        "sort_weight": 20
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect setting internal hello timer ",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/15014",
+        "status": "Fixed",
+        "date": "2023-11-14",
+        "Bug Num": "1",
+        "sort_weight": 20
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect setting internal spf hold timer ",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/16851",
+        "status": "Fixed",
+        "date": "2024-9-24",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect setting wait timer",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/16954",
+        "status": "Fix Approved",
+        "date": "2024-9-29",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect setting dead multiplier timer",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/16954",
+        "status": "Fix Approved",
+        "date": "2024-5-7",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no VLINK",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
+        "status": "Fixed",
+        "date": "2024-10-29",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no AREANSSA",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
+        "status": "Fixed",
+        "date": "2024-10-29",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no AREANSSARANGE",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
+        "status": "Fixed",
+        "date": "2024-10-29",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no AREANSSACOST",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
+        "status": "Fixed",
+        "date": "2024-10-29",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no AREADEFAULTCOST",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
+        "status": "Fixed",
+        "date": "2024-10-29",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no OSPFWRITEMULTIPLIER",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
+        "status": "Fixed",
+        "date": "2024-10-29",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no DEFUALTINFORMATION",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
+        "status": "Fixed",
+        "date": "2024-10-29",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no DISTANCE",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
+        "status": "Fixed",
+        "date": "2024-10-29",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no AREARANGECOST",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/17065",
+        "status": "Fixed",
+        "date": "2024-10-17",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no AREASHORTCUT",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/17065",
+        "status": "Fixed",
+        "date": "2024-10-17",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no DEADINTERVAL",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/16853",
+        "status": "Fixed",
+        "date": "2024-9-24",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no ABRTYPE",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/16853",
+        "status": "Fixed",
+        "date": "2024-9-24",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no WRITEMULTIPLIER",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/16954",
+        "status": "Fixed",
+        "date": "2024-5-7",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "OSPF",
+        "bug_type": "Incorrect parsing the commands of no MAXIMUMPATHS",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/16954",
+        "status": "Fixed",
+        "date": "2024-5-7",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "ISIS",
+        "bug_type": "Incorrect setting interface's psnp-interval",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/17721",
+        "status": "Fixed",
+        "date": "2024-11-25",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "ISIS",
+        "bug_type": "Incorrect setting interface's csnp-interval",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/17721",
+        "status": "Fixed",
+        "date": "2024-11-25",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "ISIS",
+        "bug_type": "Incorrect setting interface's priority",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/17721",
+        "status": "Fixed",
+        "date": "2024-11-25",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "ISIS",
+        "bug_type": "Incorrect setting interface's hello-interval",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/17721",
+        "status": "Fixed",
+        "date": "2024-11-25",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "ISIS",
+        "bug_type": "Incorrect setting interface's hello-multiplier",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/17721",
+        "status": "Fixed",
+        "date": "2024-11-25",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "ISIS",
+        "bug_type": "Incorrect setting interface's circuit-type",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/17721",
+        "status": "Fixed",
+        "date": "2024-11-25",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "ISIS",
+        "bug_type": "Incorrect ignoring some router neighbors",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/18556",
+        "status": "Confirmed",
+        "date": "2025-4-1",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "ISIS",
+        "bug_type": "Incorrect building routing loop",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/17766",
+        "status": "Pending",
+        "date": "2025-1-4",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "ISIS",
+        "bug_type": "Incorrect resetting hello timer",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/18311",
+        "status": "Fixed",
+        "date": "2025-3-25",
+        "Bug Num": "1",
+        "sort_weight": 30
+    },
+    {
+        "repo_name": "ISIS",
+        "bug_type": "Incorrect 3-Way-Handshake on P2P links",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/18590",
+        "status": "Fixe Approved",
+        "date": "2025-4-6",
+        "Bug Num": "1",
+        "sort_weight": 30
+    },
+    {
+        "repo_name": "RIP",
+        "bug_type": "Incorrect parsing the command of IPRIPSENDVERSION/IPRIPRECEIVEVERSION",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/18217",
+        "status": "Fixe Approved",
+        "date": "2025-2-21",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "RIP",
+        "bug_type": "Incorrect resetting split-horizon poisoned-reverse",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/18217",
+        "status": "Fixed",
+        "date": "2025-2-25",
+        "Bug Num": "1",
+        "sort_weight": 40
+    },
+    {
+        "repo_name": "BABEL",
+        "bug_type": "Incorrect resetting wired/wireless status",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/18413",
+        "status": "Fixed",
+        "date": "2025-3-18",
+        "Bug Num": "1",
+        "sort_weight": 40
+    },
+    {
+        "repo_name": "BABEL",
+        "bug_type": "Incorrect resetting hello timer",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/18448",
+        "status": "Fixed",
+        "date": "2025-3-21",
+        "Bug Num": "1",
+        "sort_weight": 10
+    },
+    {
+        "repo_name": "BABEL",
+        "bug_type": "Incorrect recalcualting interface when interface is down",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/18495",
+        "status": "Fix Approved",
+        "date": "2025-3-25",
+        "Bug Num": "1",
+        "sort_weight": 40
+    },
+    {
+        "repo_name": "BABEL",
+        "bug_type": "Incorrect remaning xroutes when redistribution is disabled",
+        "patch/issue link": "https://github.com/FRRouting/frr/pull/18531",
+        "status": "Confirmed",
+        "date": "2025-3-28",
+        "Bug Num": "1",
+        "sort_weight": 40
+    }
+  ]
+  

@@ -104,13 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <div class="column">
-        <div class="notification" style="background-color: #28a745; color: #ffffff;">
-          <strong>Confirmed: <span id="confirmed-count">0</span></strong>
+        <div class="notification" style="background-color: #0366d6; color: #ffffff;">
+          <strong>Fix Approved: <span id="reproduced-count">0</span></strong>
         </div>
       </div>
       <div class="column">
-        <div class="notification" style="background-color: #0366d6; color: #ffffff;">
-          <strong>Reproduced: <span id="reproduced-count">0</span></strong>
+        <div class="notification" style="background-color: #28a745; color: #ffffff;">
+          <strong>Confirmed: <span id="confirmed-count">0</span></strong>
         </div>
       </div>
       <div class="column">
@@ -124,13 +124,10 @@ document.addEventListener('DOMContentLoaded', () => {
       <thead>
         <tr>
           <th>ID</th>
-          <th>Project</th>
-          <th>Lang</th>
-          <th>Bug Type</th>
+          <th>Protocol</th>
+          <th>Root Causes</th>
           <th>Link</th>
           <th>Status</th>
-          <th>Num</th>
-          <th>Agent</th>
           <th>Date</th>
         </tr>
       </thead>
@@ -181,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const counts = {
         "Fixed": 0,
         "Confirmed": 0,
-        "Reproduced": 0,
+        "Fix Approved": 0,
         "Pending": 0
       };
       
@@ -194,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Update the display panel with counts
       document.getElementById("fixed-count").textContent = counts["Fixed"];
       document.getElementById("confirmed-count").textContent = counts["Confirmed"];
-      document.getElementById("reproduced-count").textContent = counts["Reproduced"];
+      document.getElementById("reproduced-count").textContent = counts["Fix Approved"];
       document.getElementById("pending-count").textContent = counts["Pending"];
       
       // Remove loading message
@@ -206,12 +203,9 @@ document.addEventListener('DOMContentLoaded', () => {
         row.innerHTML = `
           <td>${index + 1}</td>
           <td>${bug.repo_name}</td>
-          <td>${bug.language}</td>
           <td>${bug.bug_type}</td>
           <td><a href="${bug["patch/issue link"]}" target="_blank">View</a></td>
           <td>${bug.status}</td>
-          <td>${bug["Bug Num"]}</td>
-          <td>${bug["Agent"]}</td>
           <td>${bug.date}</td>
         `;
         tableBody.appendChild(row);
