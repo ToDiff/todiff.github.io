@@ -273,7 +273,7 @@
         "repo_name": "ISIS",
         "bug_type": "Incorrect 3-Way-Handshake on P2P links",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/18590",
-        "status": "Fixe Approved",
+        "status": "Fix Approved",
         "date": "2025-4-6",
         "Bug Num": "1",
         "sort_weight": 30
@@ -282,7 +282,7 @@
         "repo_name": "RIP",
         "bug_type": "Incorrect parsing the command of IPRIPSENDVERSION/IPRIPRECEIVEVERSION",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/18217",
-        "status": "Fixe Approved",
+        "status": "Fix Approved",
         "date": "2025-2-21",
         "Bug Num": "1",
         "sort_weight": 10
