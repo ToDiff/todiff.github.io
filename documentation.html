@@ -62,20 +62,6 @@
   </div>
 </nav>
 
-<!-- Add this script block at the end of the document (before </body>) -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const navbarBurgers = document.querySelectorAll('.navbar-burger');
-  navbarBurgers.forEach(el => {
-    el.addEventListener('click', () => {
-      const targetId = el.dataset.target;
-      const target = document.getElementById(targetId);
-      el.classList.toggle('is-active');
-      target.classList.toggle('is-active');
-    });
-  });
-});
-</script>
 
 <!-- Hero Section -->
 <section class="hero">
@@ -122,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      Template adapted from <a href="https://repoaudit-home.github.io/" target="_blank">RepoAudit</a> by Jinyao Guo et al.
+      Maintained by Bing Shui.
     </div>
   </div>
 </footer>
