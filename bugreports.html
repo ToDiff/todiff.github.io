@@ -1,211 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Mirrored from repoaudit-home.github.io/bugreports.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Apr 2025 07:03:04 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="ToDiff is an open-source tool for validating interior gateway routing protocols.">
-  <meta name="keywords" content="ToDiff, Routing Protocols, Interior Gateway Protocols, Differential Valida-
-  tion, Topology Synthesis">
+  <script>(function(){var t=localStorage.getItem("cs-lab-theme");if(t==="light")document.documentElement.setAttribute("data-theme","light");})()</script>
+  <meta name="description" content="Bug reports from ToDiff — the gallery of bugs discovered by automated differential testing of routing protocols.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ToDiff</title>
-  <!-- Optional Google Analytics -->
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <title>Bug Reports — ToDiff</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="../cdn.jsdelivr.net/gh/jpswalsh/academicons%401/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
   <link rel="icon" href="static/images/favicon.html">
-  <script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-  <style>
-    /* Optional: reduce some whitespace for a more compact layout */
-    .hero .hero-body { padding: 2rem 1rem !important; }
-    .section { padding: 1.5rem 1rem !important; }
-    .container { margin-top: 0.5rem; margin-bottom: 0.5rem; }
-    .box { padding: 1rem !important; margin-bottom: 1rem !important; }
-    .loading { text-align: center; font-size: 1.2em; margin-top: 20px; color: #555; }
-    /* Responsive navbar burger for mobile devices */
-    @media screen and (max-width: 1023px) {
-      .navbar-menu { display: none; }
-      .navbar-menu.is-active { display: block; }
-    }
-  </style>
-</head>
-<body>
 
-<!-- Navbar with additional links -->
-<!-- Navbar with additional links -->
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body data-project="todiff">
+
+<div class="bg-pattern"></div>
+<div class="site-content">
+
 <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
+  <div class="navbar-inner">
+    <a id="nav-back" href="works.html" class="nav-back" style="display:none;">
+      <span class="back-arrow">←</span> Works
     </a>
-  </div>
-  <div id="navMenu" class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="index.html">
-        <span class="icon"><i class="fas fa-home"></i></span>
-      </a>
-      <a class="navbar-item" href="bugreports.html">Bug Reports</a>
-      <a class="navbar-item" href="documentation.html">Docs</a>
-      <a class="navbar-item" href="support.html">Support</a>
-      <a class="navbar-item" href="contactus.html">Contact Us</a>
+    <a href="index.html" class="navbar-logo">
+      <span class="navbar-logo-dot"></span>
+      <span id="logo-text">CS Lab</span>
+    </a>
+    <ul id="nav-links" class="navbar-links"></ul>
+    <div class="navbar-actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <span id="theme-toggle-icon">☀️</span>
+      </button>
+      <button class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
     </div>
   </div>
 </nav>
 
-<!-- Hero Section -->
 <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1">Bug Reports</h1>
-          <div class="is-size-5" style="margin-top: 1rem;">
-            The gallery of bugs discovered by ToDiff
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="hero-inner">
+    <span class="hero-label">Bug Gallery</span>
+    <h1 class="hero-title">
+      <span class="hero-title-line gradient-text">Bug Reports</span>
+    </h1>
+    <p class="hero-subtitle">The gallery of bugs discovered by ToDiff</p>
   </div>
 </section>
 
-<!-- Full Bug Report List Section -->
-<section class="section" id="bug-reports">
-  <div class="container is-max-desktop">
-    <!-- Bug Count Display Panel -->
-    <div id="bug-count-panel" class="columns" style="margin-bottom: 1rem;">
-      <div class="column">
-        <div class="notification" style="background-color: #6f42c1; color: #ffffff;">
-          <strong>Fixed: <span id="fixed-count">0</span></strong>
-        </div>
-      </div>
-      <div class="column">
-        <div class="notification" style="background-color: #0366d6; color: #ffffff;">
-          <strong>Fix Approved: <span id="reproduced-count">0</span></strong>
-        </div>
-      </div>
-      <div class="column">
-        <div class="notification" style="background-color: #28a745; color: #ffffff;">
-          <strong>Confirmed: <span id="confirmed-count">0</span></strong>
-        </div>
-      </div>
-      <div class="column">
-        <div class="notification" style="background-color: #ffd33d; color: #000000;">
-          <strong>Pending: <span id="pending-count">0</span></strong>
-        </div>
-      </div>
+<section class="section">
+  <div class="section-inner">
+    <div class="stat-panels reveal" id="bug-count-panel">
+      <div class="stat-panel panel-fixed"><div class="panel-count" id="fixed-count">0</div><div class="panel-label">Fixed</div></div>
+      <div class="stat-panel panel-fix-approved"><div class="panel-count" id="reproduced-count">0</div><div class="panel-label">Fix Approved</div></div>
+      <div class="stat-panel panel-confirmed"><div class="panel-count" id="confirmed-count">0</div><div class="panel-label">Confirmed</div></div>
+      <div class="stat-panel panel-pending"><div class="panel-count" id="pending-count">0</div><div class="panel-label">Pending</div></div>
     </div>
+
     <div id="loading-message" class="loading">Loading bug reports...</div>
-    <table class="table is-striped is-hoverable is-fullwidth">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Protocol</th>
-          <th>Root Causes</th>
-          <th>Link</th>
-          <th>Status</th>
-          <th>Date</th>
-        </tr>
-      </thead>
-      <tbody id="bug-report-table">
-        <!-- Data will be dynamically inserted here -->
-      </tbody>
-    </table>
+
+    <div class="table-wrapper reveal">
+      <table>
+        <thead><tr><th>ID</th><th>Protocol</th><th>Root Causes</th><th>Link</th><th>Status</th><th>Date</th></tr></thead>
+        <tbody id="bug-report-table"></tbody>
+      </table>
+    </div>
   </div>
 </section>
 
 <footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      Maintained by Bing Shui.
-    </div>
+  <div class="footer-brand">Compiler &amp; Security Lab</div>
+  <div class="footer-copy">
+    School of Computer Science · Nanjing University &nbsp;|&nbsp;
+    <a href="mailto:qingkaishi@nju.edu.cn">Contact</a>
   </div>
 </footer>
 
-<!-- Responsive Navbar Burger Toggle Script -->
+</div>
+
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.querySelector('.navbar-burger');
-    const menu = document.getElementById(burger.dataset.target || "navMenu");
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('is-active');
-      menu.classList.toggle('is-active');
-    });
-  });
-  
-  // Function to load JSON data and populate the table and bug count panel
   async function loadBugReports() {
     try {
-      const response = await fetch("static/bug/BugReport.json");
-      const bugReports = await response.json();
-
-      // Sort bugReports by descending sort_weight and then descending date
-      bugReports.sort((a, b) => {
-        if (b.sort_weight !== a.sort_weight) {
-          return b.sort_weight - a.sort_weight;
-        }
-        return new Date(b.date) - new Date(a.date);
-      });
-
-      const tableBody = document.getElementById("bug-report-table");
-      const loadingMessage = document.getElementById("loading-message");
-      
-      // Compute counts by adding up "Bug Num" per status
-      const counts = {
-        "Fixed": 0,
-        "Confirmed": 0,
-        "Fix Approved": 0,
-        "Pending": 0
-      };
-      
-      bugReports.forEach(bug => {
-        if (counts.hasOwnProperty(bug.status)) {
-          counts[bug.status] += parseInt(bug["Bug Num"], 10);
-        }
-      });
-      
-      // Update the display panel with counts
+      const r = await fetch("static/bug/BugReport.json");
+      const bugs = await r.json();
+      bugs.sort((a, b) => (b.sort_weight - a.sort_weight) || (new Date(b.date) - new Date(a.date)));
+      const tbody = document.getElementById("bug-report-table");
+      const counts = { "Fixed":0, "Confirmed":0, "Fix Approved":0, "Pending":0 };
+      bugs.forEach(b => { if (counts.hasOwnProperty(b.status)) counts[b.status] += parseInt(b["Bug Num"], 10); });
       document.getElementById("fixed-count").textContent = counts["Fixed"];
       document.getElementById("confirmed-count").textContent = counts["Confirmed"];
       document.getElementById("reproduced-count").textContent = counts["Fix Approved"];
       document.getElementById("pending-count").textContent = counts["Pending"];
-      
-      // Remove loading message
-      loadingMessage.style.display = "none";
-      
-      // Populate table rows with bug reports
-      bugReports.forEach((bug, index) => {
+      document.getElementById("loading-message").style.display = "none";
+      bugs.forEach((bug, i) => {
         const row = document.createElement("tr");
-        row.innerHTML = `
-          <td>${index + 1}</td>
-          <td>${bug.repo_name}</td>
-          <td>${bug.bug_type}</td>
-          <td><a href="${bug["patch/issue link"]}" target="_blank">View</a></td>
-          <td>${bug.status}</td>
-          <td>${bug.date}</td>
-        `;
-        tableBody.appendChild(row);
+        row.innerHTML = '<td>'+(i+1)+'</td><td>'+bug.repo_name+'</td><td>'+bug.bug_type+'</td><td><a href="'+bug["patch/issue link"]+'" target="_blank">View</a></td><td>'+bug.status+'</td><td>'+bug.date+'</td>';
+        tbody.appendChild(row);
       });
-    } catch (error) {
-      console.error("Error loading bug reports:", error);
-      document.getElementById("loading-message").textContent = "Failed to load bug reports.";
+    } catch (e) {
+      console.error(e);
+      var m = document.getElementById("loading-message");
+      if (m) m.textContent = "Failed to load bug reports.";
     }
   }
-  
-  // Load bug reports when the DOM content is loaded
   document.addEventListener("DOMContentLoaded", loadBugReports);
 </script>
-
 </body>
-
 </html>
