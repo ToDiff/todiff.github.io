@@ -1,78 +1,217 @@
-window.HELP_IMPROVE_VIDEOJS = false;
+/* ============================================================
+   Compiler & Security Lab — Shared JavaScript
+   - Dynamic navbar (lab vs. project context)
+   - Theme toggle (dark/light, localStorage)
+   - Page transition (clean fade)
+   - Scroll-reveal animations
+   - Navbar burger, FAQ
+   ============================================================ */
 
-var INTERP_BASE = "./static/interpolation/stacked";
-var NUM_INTERP_FRAMES = 240;
+(function () {
+  'use strict';
 
-var interp_images = [];
-function preloadInterpolationImages() {
-  for (var i = 0; i < NUM_INTERP_FRAMES; i++) {
-    var path = INTERP_BASE + '/' + String(i).padStart(6, '0') + '.jpg';
-    interp_images[i] = new Image();
-    interp_images[i].src = path;
+  /* ── Project Registry ───────────────────────────────────
+     Each project defines its own tabs.
+     Add new projects here — the navbar auto-adapts.
+     ─────────────────────────────────────────────────────── */
+  var PROJECTS = {
+    todiff: {
+      name: 'ToDiff',
+      tabs: [
+        { label: 'Overview',    href: 'todiff.html' },
+        { label: 'Bug Reports', href: 'bugreports.html' },
+        { label: 'Docs',        href: 'documentation.html' },
+        { label: 'Support',     href: 'support.html' }
+      ]
+    }
+  };
+
+  var LAB_NAV = [
+    { label: 'Home',   href: 'index.html' },
+    { label: 'Works',  href: 'works.html' },
+    { label: 'People', href: 'people.html' }
+  ];
+
+  /* ── Detect current context ─────────────────────────── */
+  function getProjectName() {
+    return document.body.getAttribute('data-project') || null;
   }
-}
 
-function setInterpolationImage(i) {
-  var image = interp_images[i];
-  image.ondragstart = function() { return false; };
-  image.oncontextmenu = function() { return false; };
-  $('#interpolation-image-wrapper').empty().append(image);
-}
+  function getCurrentPath() {
+    var path = window.location.pathname;
+    var name = path.substring(path.lastIndexOf('/') + 1);
+    return name || 'index.html';
+  }
 
+  /* ── Render Navbar ──────────────────────────────────── */
+  function renderNavbar() {
+    var project = getProjectName();
+    var current = getCurrentPath();
+    var list = document.getElementById('nav-links');
+    if (!list) return;
 
-$(document).ready(function() {
-    // Check for click events on the navbar burger icon
-    $(".navbar-burger").click(function() {
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      $(".navbar-burger").toggleClass("is-active");
-      $(".navbar-menu").toggleClass("is-active");
+    var backBtn = document.getElementById('nav-back');
+    var logoText = document.getElementById('logo-text');
 
+    if (project && PROJECTS[project]) {
+      // ── Project context ──
+      var cfg = PROJECTS[project];
+      if (backBtn) {
+        backBtn.style.display = 'flex';
+      }
+      if (logoText) logoText.textContent = cfg.name;
+      // Update logo link to project base page
+      var logoLink = document.querySelector('.navbar-logo');
+      if (logoLink && cfg.tabs[0]) logoLink.href = cfg.tabs[0].href;
+
+      list.innerHTML = '';
+      cfg.tabs.forEach(function (tab) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = tab.href;
+        a.textContent = tab.label;
+        if (current === tab.href) a.classList.add('active');
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+    } else {
+      // ── Lab context ──
+      if (backBtn) backBtn.style.display = 'none';
+      if (logoText) logoText.textContent = 'CS Lab';
+      var logoLink = document.querySelector('.navbar-logo');
+      if (logoLink) logoLink.href = 'index.html';
+
+      list.innerHTML = '';
+      LAB_NAV.forEach(function (item) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = item.href;
+        a.textContent = item.label;
+        if (current === item.href) a.classList.add('active');
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+    }
+  }
+
+  /* ── Theme Toggle ───────────────────────────────────── */
+  var THEME_KEY = 'cs-lab-theme';
+
+  function getTheme() {
+    return (localStorage.getItem(THEME_KEY) === 'light') ? 'light' : 'dark';
+  }
+
+  function applyTheme(t) {
+    if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    else document.documentElement.removeAttribute('data-theme');
+    var icon = document.getElementById('theme-toggle-icon');
+    if (icon) icon.textContent = (t === 'light') ? '🌙' : '☀️';
+  }
+
+  function toggleTheme() {
+    var next = (getTheme() === 'dark') ? 'light' : 'dark';
+    localStorage.setItem(THEME_KEY, next);
+    applyTheme(next);
+  }
+
+  /* ── Page Transition (clean fade) ───────────────────── */
+  var transitioning = false;
+
+  function getOverlay() {
+    var el = document.getElementById('pt-overlay');
+    if (el) return el;
+    el = document.createElement('div');
+    el.id = 'pt-overlay';
+    el.innerHTML = '<div class="pt-spinner"></div>';
+    document.body.appendChild(el);
+    return el;
+  }
+
+  function navigateTo(url) {
+    if (transitioning) return;
+    transitioning = true;
+    var overlay = getOverlay();
+    overlay.classList.add('active');
+
+    setTimeout(function () {
+      window.location.href = url;
+    }, 200);
+  }
+
+  function initPageTransitions() {
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+      var href = link.getAttribute('href');
+      if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('//') ||
+          link.target === '_blank' || link.hasAttribute('download') || href.startsWith('mailto:')) return;
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+
+      e.preventDefault();
+      navigateTo(href);
     });
 
-    var options = {
-			slidesToScroll: 1,
-			slidesToShow: 3,
-			loop: true,
-			infinite: true,
-			autoplay: false,
-			autoplaySpeed: 3000,
+    // Fade out overlay on page load
+    var overlay = document.getElementById('pt-overlay');
+    if (overlay) {
+      setTimeout(function () {
+        overlay.classList.remove('active');
+        setTimeout(function () {
+          if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+        }, 300);
+      }, 80);
     }
+  }
 
-		// Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
+  /* ── Scroll Reveal ──────────────────────────────────── */
+  function initScrollReveal() {
+    if (!('IntersectionObserver' in window)) return;
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+  }
 
-    // Loop on each carousel initialized
-    for(var i = 0; i < carousels.length; i++) {
-    	// Add listener to  event
-    	carousels[i].on('before:show', state => {
-    		console.log(state);
-    	});
-    }
-
-    // Access to bulmaCarousel instance of an element
-    var element = document.querySelector('#my-element');
-    if (element && element.bulmaCarousel) {
-    	// bulmaCarousel instance is available as element.bulmaCarousel
-    	element.bulmaCarousel.on('before-show', function(state) {
-    		console.log(state);
-    	});
-    }
-
-    /*var player = document.getElementById('interpolation-video');
-    player.addEventListener('loadedmetadata', function() {
-      $('#interpolation-slider').on('input', function(event) {
-        console.log(this.value, player.duration);
-        player.currentTime = player.duration / 100 * this.value;
-      })
-    }, false);*/
-    preloadInterpolationImages();
-
-    $('#interpolation-slider').on('input', function(event) {
-      setInterpolationImage(this.value);
+  /* ── Navbar Burger ──────────────────────────────────── */
+  function initBurger() {
+    var burger = document.querySelector('.navbar-burger');
+    var menu = document.getElementById('nav-links');
+    if (!burger || !menu) return;
+    burger.addEventListener('click', function () {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
     });
-    setInterpolationImage(0);
-    $('#interpolation-slider').prop('max', NUM_INTERP_FRAMES - 1);
+  }
 
-    bulmaSlider.attach();
+  /* ── FAQ ────────────────────────────────────────────── */
+  function initFaq() {
+    document.querySelectorAll('.faq-question').forEach(function (q) {
+      q.addEventListener('click', function () {
+        q.classList.toggle('open');
+        var a = q.nextElementSibling;
+        if (a) a.classList.toggle('hidden');
+      });
+    });
+  }
 
-})
+  /* ── Init ───────────────────────────────────────────── */
+  function init() {
+    applyTheme(getTheme());
+    renderNavbar();
+    initBurger();
+    initFaq();
+    initScrollReveal();
+    initPageTransitions();
+
+    var toggle = document.getElementById('theme-toggle');
+    if (toggle) toggle.addEventListener('click', toggleTheme);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();

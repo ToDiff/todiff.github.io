@@ -1,274 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="ToDiff is an open-source tool for validating interior gateway routing protocols.">
-  <meta name="keywords" content="ToDiff, Routing Protocols, Interior Gateway Protocols, Differential Valida-
-  tion, Topology Synthesis">
+  <script>(function(){var t=localStorage.getItem("cs-lab-theme");if(t==="light")document.documentElement.setAttribute("data-theme","light");})()</script>
+  <meta name="description" content="Compiler & Security Lab — School of Computer Science, Nanjing University.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ToDiff</title>
-  <!-- Optional Google Analytics -->
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <title>Compiler &amp; Security Lab — Nanjing University</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
   <link rel="icon" href="static/images/favicon.html">
-  <script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
-  <style>
-    /* Responsive adjustments for compact layout */
-    .hero .hero-body { padding: 2rem 1rem !important; }
-    .section { padding: 1.5rem 1rem !important; }
-    .container { margin-top: 0.5rem; margin-bottom: 0.5rem; }
-    .box { padding: 1rem !important; margin-bottom: 1rem !important; }
-    .loading { text-align: center; font-size: 1.2em; margin-top: 20px; color: #555; }
-    /* Navbar burger adjustments for mobile */
-    @media screen and (max-width: 1023px) {
-      .navbar-menu { display: none; }
-      .navbar-menu.is-active { display: block; }
-    }
-  </style>
 </head>
 <body>
 
-<!-- Navbar with additional links -->
-<!-- Navbar with additional links -->
+<div class="bg-pattern"></div>
+<div class="site-content">
+
+<!-- Navbar — JS populates #nav-links based on context -->
 <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
+  <div class="navbar-inner">
+    <a id="nav-back" href="works.html" class="nav-back" style="display:none;">
+      <span class="back-arrow">←</span>
+      <span class="back-label"></span>
     </a>
-  </div>
-  <div id="navMenu" class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="index-2.html">
-        <span class="icon"><i class="fas fa-home"></i></span>
-      </a>
-      <a class="navbar-item" href="bugreports.html">Bug Reports</a>
-      <a class="navbar-item" href="documentation.html">Docs</a>
-      <a class="navbar-item" href="support.html">Support</a>
-      <a class="navbar-item" href="contactus.html">Contact Us</a>
+    <a href="index.html" class="navbar-logo">
+      <span class="navbar-logo-dot"></span>
+      <span id="logo-text">CS Lab</span>
+    </a>
+    <ul id="nav-links" class="navbar-links"></ul>
+    <div class="navbar-actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <span id="theme-toggle-icon">☀️</span>
+      </button>
+      <button class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
     </div>
   </div>
 </nav>
 
-
-
-<!-- Hero Section: Introduction -->
+<!-- Hero -->
 <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-3"> Making Routing Protocols More Secure</h1>
-          <div class="buttons is-centered" style="margin-top: 1.5rem;">
-            <a href="https://github.com/Compiler-Security/ToDiff/blob/main/doc/paper.pdf" class="button is-normal is-rounded is-dark" target="_blank">
-              <span class="icon"><i class="ai ai-acm"></i></span>
-              <span>Paper</span>
-            </a>
-            <a href="https://github.com/Compiler-Security/ToDiff" class="button is-normal is-rounded is-dark" target="_blank">
-              <span class="icon"><i class="fab fa-github"></i></span>
-              <span>Code</span>
-            </a>
-          </div>
+  <div class="hero-inner">
+    <span class="hero-label">School of Computer Science · Nanjing University</span>
+    <h1 class="hero-title">
+      <span class="hero-title-line">Compiler &amp;</span>
+      <span class="hero-title-line gradient-text">Security Lab</span>
+    </h1>
+    <p class="hero-subtitle">
+      We explore compiler-based approaches to strengthen software security,
+      network security, and system security — building tools that find
+      hidden flaws before they become exploits.
+    </p>
+
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-value c1">30+</div>
+        <div class="stat-label">Zero-Day Bugs Found</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value c2">CCS '25</div>
+        <div class="stat-label">Top-Tier Publication</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value c3">5</div>
+        <div class="stat-label">Protocols Covered</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- What We Do -->
+<section class="section">
+  <div class="section-inner">
+    <h2 class="section-title reveal">
+      <span class="gradient-text">What We Do</span>
+    </h2>
+    <div class="split-grid">
+      <div class="card flat reveal">
+        <h3 style="margin:0 0 1rem;font-size:1.1rem;">🔬 Research Areas</h3>
+        <ul style="margin:0;padding-left:1.25rem;line-height:2;color:var(--text-secondary);">
+          <li>Compiler-based program analysis</li>
+          <li>Automated differential testing</li>
+          <li>Network protocol security</li>
+          <li>Software supply chain security</li>
+          <li>AI-assisted vulnerability detection</li>
+        </ul>
+      </div>
+      <div class="card flat reveal">
+        <h3 style="margin:0 0 1rem;font-size:1.1rem;">🛠️ Our Approach</h3>
+        <p style="margin:0;color:var(--text-secondary);line-height:1.8;">
+          We build practical tools grounded in compiler techniques — static analysis,
+          dynamic instrumentation, and automated test generation — to uncover
+          vulnerabilities in real-world software and network systems.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Works -->
+<section class="section">
+  <div class="section-inner">
+    <h2 class="section-title reveal">
+      <span class="gradient-text">Featured Works</span>
+    </h2>
+    <div class="project-grid">
+      <a href="todiff.html" class="project-card reveal">
+        <div class="project-card-image">🔀</div>
+        <div class="project-card-body">
+          <h3>ToDiff</h3>
+          <p>Automated differential testing for interior gateway routing protocols. 30+ zero-day bugs found in OSPF, IS-IS, RIP, BABEL and OpenFabric.</p>
+          <span class="project-card-tag">CCS 2025</span>
+        </div>
+      </a>
+      <div class="project-card reveal">
+        <div class="project-card-image" style="opacity:0.35;">—</div>
+        <div class="project-card-body">
+          <h3>Coming Soon</h3>
+          <p>—</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="container is-max-desktop">
-    <div class="box">
-      <p><span style="font-size: 2em;">😠</span> Are you frustrated by unnoticed routing protocol issues causing network instability?</p>
-      <p><span style="font-size: 2em;">😠</span> Have you ever complained exsisting testing methods such as fuzzing misses countless bugs?</p>
-      <p><span style="font-size: 2em;">😠</span> Have you found it requires too much manual effort to test routing protocols — like handcrafting topologies or calculating routing tables by hand?</p>
-      <p><span style="font-size: 2em;">🍀</span> Meet <strong>ToDiff</strong> — your go-to tool for next-generation routing protocol validation!</p>
-      <p>
-        <span style="font-size: 2.5em;">🎯</span> At ToDiff, we are dedicated to revolutionizing routing protocol validation with automated differential testing. By leveraging dedicated network generation algorithm with equivalent topology synthesis, ToDiff detects hidden bugs in routing protocol implementations with unprecedented efficiency:
-      </p>
-      <div class="content">
-        <ul>
-          <li><strong>Oracle-Free:</strong> No need to build complex topologies or calculate expected results — ToDiff auto-generates equivalent programs and detects bugs via differential analysis.</li>
-          <li><strong>Fully Automated:</strong> From random topology generation to differential analysis, the entire process runs with minimal human efforts and scales to hundreds of test cases per hour.
-          <li><strong>Bug Hunter Supreme:</strong> With broad test coverage, ToDiff found 30+ zero-day bugs, many causing serious issues like traffic blackholes.
-          <li><strong>Multi-Protocol Support:</strong> Testing multiple protocols in interior gateway routing protocol families with ease. ToDiff currently supports OSPF, IS-IS, RIP, BABEL, and OpenFabric, with additional protocol support on the horizon. </li>
-          <li><strong>Easy-to-Customize:</strong> Comes with a user-friendly framework and detailed open documentation to help users test new protocols with ease. </li>
-        </ul>
-        <p>
-          Want to see it in action? Check out our demo videos and see how ToDiff validates routing protocol implementations.
-        </p>
-      </div>
-    </div>
-    
-    <div class="columns" style="margin-top: 1rem;">
-      <div class="column">
-        <video controls muted loop poster="static/videos/intro_preview.jpg" style="width: 100%; border: 3px solid black; border-radius: 8px;">
-          <source src="static/videos/Intro.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="column">
-        <video controls muted loop poster="static/videos/demo_preview.jpg" style="width: 100%; border: 3px solid black; border-radius: 8px;">
-          <source src="static/videos/demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-    
-  </div>
 </section>
 
-<!-- News Section -->
+<!-- News -->
 <section class="section" id="news">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Latest News</h2>
-    <div class="box">
-      <ul style="list-style: none; padding-left: 0;">
-        <li style="margin-bottom: 0.5rem;">
-          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
-          <strong>(05/2025):</strong>
-          ToDiff was accepted to CCS'25. 
-        </li>
-        <li style="margin-bottom: 0.5rem;">
-          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
-          <strong>(03/2025):</strong>
-          ToDiff now can support detecting more protocols including RIP, BABEL and OpenFabric. 
-        </li>
-        <li style="margin-bottom: 0.5rem;">
-          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
-          <strong>(01/2025):</strong>
-          Our preprint paper <h2><em>Validating Interior Gateway Routing Protocols via Equivalent Topology Synthesis</em></h2> is out!
-        </li>
-        <li style="margin-bottom: 0.5rem;">
-          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
-          <strong>(12/2024):</strong>
-          ToDiff detects 26 zero-day bugs in OSPF and ISIS protocols.
-        </li>
+  <div class="section-inner">
+    <h2 class="section-title reveal">
+      <span class="gradient-text">Latest News</span>
+    </h2>
+    <div class="card flat reveal">
+      <ul class="news-list">
+        <li class="news-item">🎉 <span><span class="news-date">(05/2025)</span> ToDiff accepted to <strong>CCS 2025</strong>.</span></li>
+        <li class="news-item">🎉 <span><span class="news-date">(03/2025)</span> ToDiff now supports RIP, BABEL, and OpenFabric.</span></li>
+        <li class="news-item">📄 <span><span class="news-date">(01/2025)</span> Preprint: <em>Validating IGPs via Equivalent Topology Synthesis</em>.</span></li>
+        <li class="news-item">🔍 <span><span class="news-date">(12/2024)</span> ToDiff detected 26 zero-day bugs in OSPF and IS-IS.</span></li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- Bug Report List Section: Top 10 -->
-<section class="section" id="bug-reports">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Bug Report List (Top 10)</h2>
-    <div id="loading-message" class="loading">Loading bug reports...</div>
-    <table class="table is-striped is-hoverable is-fullwidth">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Protocol</th>
-          <th>Root Causes</th>
-          <th>Link</th>
-          <th>Status</th>
-          <th>Date</th>
-        </tr>
-      </thead>
-      <tbody id="bug-report-table">
-        <!-- Dynamic rows will be inserted here -->
-      </tbody>
-    </table>
-    <div class="has-text-centered" style="margin-top: 1rem;">
-      <a href="bugreports.html" class="button is-link is-rounded">View More Bug Reports</a>
-    </div>
-  </div>
-</section>
-
-<!-- How to Start Section -->
-<section class="section" id="how-to-start">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">How to Start and Contribute</h2>
-    <div class="box">
-      <div class="content">
-        <ul>
-          <li>
-            <strong>For General Users:</strong> Get started by checking out our repository’s 
-            <a href="https://github.com/Shbinging/topo-fuzz.git" target="_blank">README</a>. It provides step-by-step guides and usage examples. Our 
-            <a href="support.html" target="_blank">support page</a> gives further guidance on troubleshooting and common concerns.
-          </li>
-          <li>
-            <strong>For Domain Experts:</strong> Check out our 
-            <a href="documentation.html" target="_blank">documentation</a> for detailed information. Learn how to extend ToDiff for additional network protocols.
-          </li>
-        </ul>
-        <p>
-          If you find any bugs in open-source projects using ToDiff and get them confirmed, please submit an issue on our 
-          <a href="bugreports.html" target="_blank">bug list</a>. We will acknowledge your contribution by listing the bugs.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      Maintained by Bing Shui.
-    </div>
+  <div class="footer-brand">Compiler &amp; Security Lab</div>
+  <div class="footer-copy">
+    School of Computer Science · Nanjing University &nbsp;|&nbsp;
+    <a href="mailto:qingkaishi@nju.edu.cn">Contact</a>
   </div>
 </footer>
 
-<!-- Navbar burger toggle script for mobile devices -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.querySelector('.navbar-burger');
-    const menu = document.getElementById(burger.dataset.target || "navMenu");
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('is-active');
-      menu.classList.toggle('is-active');
-    });
-  });
-
-  async function loadBugReports() {
-    try {
-      const response = await fetch("static/bug/BugReport.json");
-      const bugReports = await response.json();
-
-      // Sort bugReports by descending sort_weight and then descending date
-      bugReports.sort((a, b) => {
-        if (b.sort_weight !== a.sort_weight) {
-          return b.sort_weight - a.sort_weight;
-        }
-        return new Date(b.date) - new Date(a.date);
-      });
-
-      const tableBody = document.getElementById("bug-report-table");
-      const loadingMessage = document.getElementById("loading-message");
-      
-      // Remove loading message
-      loadingMessage.style.display = "none";
-      
-      // Populate table rows with bug reports
-      bugReports.slice(0, 10).forEach((bug, index) => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-          <td>${index + 1}</td>
-          <td>${bug.repo_name}</td>
-          <td>${bug.bug_type}</td>
-          <td><a href="${bug["patch/issue link"]}" target="_blank">View</a></td>
-          <td>${bug.status}</td>
-          <td>${bug.date}</td>
-        `;
-        tableBody.appendChild(row);
-      });
-    } catch (error) {
-      console.error("Error loading bug reports:", error);
-      document.getElementById("loading-message").textContent = "Failed to load bug reports.";
-    }
-  }
-    
-  document.addEventListener("DOMContentLoaded", loadBugReports);
-</script>
+</div>
 </body>
-
-<!-- Mirrored from repoaudit-home.github.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Apr 2025 07:02:58 GMT -->
 </html>

@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <script>(function(){var t=localStorage.getItem("cs-lab-theme");if(t==="light")document.documentElement.setAttribute("data-theme","light");})()</script>
-  <meta name="description" content="Support for ToDiff.">
+  <meta name="description" content="Research works from the Compiler & Security Lab at Nanjing University.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support — ToDiff</title>
+  <title>Our Works — Compiler &amp; Security Lab</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
-<body data-project="todiff">
+<body>
 
 <div class="bg-pattern"></div>
 <div class="site-content">
@@ -27,7 +27,8 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-inner">
     <a id="nav-back" href="works.html" class="nav-back" style="display:none;">
-      <span class="back-arrow">←</span> Works
+      <span class="back-arrow">←</span>
+      <span class="back-label"></span>
     </a>
     <a href="index.html" class="navbar-logo">
       <span class="navbar-logo-dot"></span>
@@ -47,28 +48,41 @@
 
 <section class="hero">
   <div class="hero-inner">
-    <span class="hero-label">Help Center</span>
-    <h1 class="hero-title"><span class="hero-title-line gradient-text">Support</span></h1>
-    <p class="hero-subtitle">Need help with ToDiff? Find answers, report issues, and join our community.</p>
+    <span class="hero-label">Our Research Projects</span>
+    <h1 class="hero-title">
+      <span class="hero-title-line gradient-text">Our Works</span>
+    </h1>
+    <p class="hero-subtitle">
+      Practical tools and systems that advance software security through compiler-based techniques.
+    </p>
   </div>
 </section>
 
 <section class="section">
   <div class="section-inner">
-    <div class="card flat mb-2 reveal">
-      <h2 style="margin:0 0 1.25rem;font-size:1.35rem;">Need help?</h2>
-      <dl style="margin:0;line-height:1.8;">
-        <dt><strong>GitHub Issues:</strong></dt>
-        <dd style="margin-left:1rem;color:var(--text-secondary);">Submit a bug report or question on our <a href="https://github.com/Shbinging/topo-fuzz/issues" target="_blank">GitHub repository</a>.</dd>
-        <dt style="margin-top:1rem;"><strong>Contact the maintainers:</strong></dt>
-        <dd style="margin-left:1rem;color:var(--text-secondary);">Reach the <a href="people.html">team members</a> by email for assistance.</dd>
-      </dl>
-    </div>
-    <div class="card flat reveal">
-      <h2 style="margin:0 0 1.25rem;font-size:1.35rem;">FAQ</h2>
-      <div class="faq-item">
-        <div class="faq-question"><span class="faq-icon"><i class="fas fa-chevron-right"></i></span><span>Does ToDiff support multiple protocols?</span></div>
-        <div class="faq-answer hidden"><p>Yes. ToDiff can test OSPF, ISIS, RIP, BABEL, and OpenFabric.</p></div>
+    <div class="project-grid">
+      <a href="todiff.html" class="project-card reveal">
+        <div class="project-card-image">🔀</div>
+        <div class="project-card-body">
+          <h3>ToDiff</h3>
+          <p>Automated differential testing for interior gateway routing protocols. Detected 30+ zero-day bugs across OSPF, IS-IS, RIP, BABEL and OpenFabric.</p>
+          <span class="project-card-tag">CCS 2025</span>
+          <span class="project-card-tag" style="background:rgba(14,165,233,0.12);color:var(--accent-3);margin-left:0.4rem;">Active</span>
+        </div>
+      </a>
+      <div class="project-card reveal">
+        <div class="project-card-image" style="opacity:0.35;">—</div>
+        <div class="project-card-body">
+          <h3>Coming Soon</h3>
+          <p>—</p>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-card-image" style="opacity:0.35;">—</div>
+        <div class="project-card-body">
+          <h3>Coming Soon</h3>
+          <p>—</p>
+        </div>
       </div>
     </div>
   </div>
