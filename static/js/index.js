@@ -1,5 +1,5 @@
 /* ============================================================
-   Compiler & Security Lab — Shared JavaScript
+   Network Security Lab — Shared JavaScript
    - Dynamic navbar (lab vs. project context)
    - Theme toggle (dark/light, localStorage)
    - Page transition (clean fade)
@@ -18,18 +18,18 @@
     todiff: {
       name: 'ToDiff',
       tabs: [
-        { label: 'Overview',    href: 'todiff.html' },
-        { label: 'Bug Reports', href: 'bugreports.html' },
-        { label: 'Docs',        href: 'documentation.html' },
-        { label: 'Support',     href: 'support.html' }
+        { label: 'Overview', href: 'todiff.html' },
+        { label: 'Docs',     href: 'documentation.html' },
+        { label: 'Support',  href: 'support.html' }
       ]
     }
   };
 
   var LAB_NAV = [
-    { label: 'Home',   href: 'index.html' },
-    { label: 'Works',  href: 'works.html' },
-    { label: 'People', href: 'people.html' }
+    { label: 'Home',        href: 'index.html' },
+    { label: 'Works',       href: 'works.html' },
+    { label: 'Bug Reports', href: 'bugreports.html' },
+    { label: 'People',      href: 'people.html' }
   ];
 
   /* ── Detect current context ─────────────────────────── */
@@ -77,7 +77,7 @@
     } else {
       // ── Lab context ──
       if (backBtn) backBtn.style.display = 'none';
-      if (logoText) logoText.textContent = 'CS Lab';
+      if (logoText) logoText.textContent = 'NS Lab';
       var logoLink = document.querySelector('.navbar-logo');
       if (logoLink) logoLink.href = 'index.html';
 
