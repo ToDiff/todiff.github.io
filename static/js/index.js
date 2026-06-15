@@ -22,6 +22,14 @@
         { label: 'Docs',     href: 'documentation.html' },
         { label: 'Support',  href: 'support.html' }
       ]
+    },
+    spar: {
+      name: 'SPAR',
+      tabs: [
+        { label: 'Overview', href: 'spar.html' },
+        { label: 'Docs',     href: 'spar-docs.html' },
+        { label: 'Support',  href: 'spar-support.html' }
+      ]
     }
   };
 

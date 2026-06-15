@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <script>(function(){var t=localStorage.getItem("cs-lab-theme");if(t==="light")document.documentElement.setAttribute("data-theme","light");})()</script>
+  <meta name="description" content="SPAR — Generating precise format specifications for network protocols through adversarial LLM interactions.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPAR — Network Security Lab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="icon" href="static/images/favicon.html">
+
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body data-project="spar">
+
+<div class="bg-pattern"></div>
+<div class="site-content">
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-inner">
+    <a id="nav-back" href="works.html" class="nav-back" style="display:none;">
+      <span class="back-arrow">←</span> Works
+    </a>
+    <a href="index.html" class="navbar-logo">
+      <span class="navbar-logo-dot"></span>
+      <span id="logo-text">NS Lab</span>
+    </a>
+    <ul id="nav-links" class="navbar-links"></ul>
+    <div class="navbar-actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <span id="theme-toggle-icon">☀️</span>
+      </button>
+      <button class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-label">LLM-Driven Protocol Specification Generation</span>
+    <h1 class="hero-title">
+      <span class="hero-title-line gradient-text">SPAR</span>
+    </h1>
+    <p class="hero-subtitle">
+      Automatically generating precise, verified format specifications for network
+      protocols from RFC documents through adversarial LLM interactions.
+    </p>
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-value c1">24</div>
+        <div class="stat-label">Zero-Day Bugs Found</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value c2">8</div>
+        <div class="stat-label">Protocols Covered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value c3">SEC '26</div>
+        <div class="stat-label">Accepted</div>
+      </div>
+    </div>
+    <div class="flex justify-center gap-2">
+      <a href="static/papers/paper-spar.pdf" class="btn btn-primary" target="_blank">
+        <span class="icon"><i class="ai ai-acm"></i></span> Paper
+      </a>
+      <a href="https://github.com/SpadeMomo/SPAR-AE" class="btn btn-outline" target="_blank">
+        <span class="icon"><i class="fab fa-github"></i></span> Code
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <p style="text-align:center;color:var(--text-secondary);max-width:650px;margin:0 auto 2rem;font-size:1.1rem;line-height:1.7;">
+      Writing precise protocol format specifications by hand is tedious and error-prone.
+      <strong>SPAR</strong> leverages LLMs with adversarial refinement to generate verified
+      specifications automatically from RFC documents.
+    </p>
+
+    <div class="feature-grid">
+      <div class="card reveal">
+        <div class="feature-icon">🤖</div>
+        <h4>LLM-Driven Generation</h4>
+        <p>Automatically produces precise packet format specifications from natural-language RFC documents.</p>
+      </div>
+      <div class="card reveal">
+        <div class="feature-icon">🔄</div>
+        <h4>Adversarial Refinement Loop</h4>
+        <p>Two heterogeneous LLM tasks rarely make the same mistake — an adversarial loop exposes their inconsistencies and corrects errors until no changes remain.</p>
+      </div>
+      <div class="card reveal">
+        <div class="feature-icon">✅</div>
+        <h4>Formally Verified Output</h4>
+        <p>Built on EverParse and Z3 — every generated specification passes formal syntax verification before acceptance.</p>
+      </div>
+      <div class="card reveal">
+        <div class="feature-icon">📡</div>
+        <h4>Multi-Protocol</h4>
+        <p>Demonstrated across 8 protocols: BGPv4, NTP, IGMP, BFD, BABEL, SCTP, DNS, and HTTP/2.</p>
+      </div>
+      <div class="card reveal">
+        <div class="feature-icon">🔍</div>
+        <h4>End-to-End Automation</h4>
+        <p>From RFC document parsing to verified specification output, the entire pipeline runs automatically with minimal human intervention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-brand">Network Security Lab</div>
+  <div class="footer-copy">
+    School of Computer Science · Nanjing University &nbsp;|&nbsp;
+    <a href="mailto:qingkaishi@nju.edu.cn">Contact</a>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

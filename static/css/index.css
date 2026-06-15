@@ -146,6 +146,9 @@ body {
   transition: background var(--transition-slow), color var(--transition-slow);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ── Background layer ─────────────────────────────────── */
@@ -181,6 +184,7 @@ body {
 .site-content {
   position: relative;
   z-index: 1;
+  flex: 1;
 }
 
 /* ── Typography ───────────────────────────────────────── */
