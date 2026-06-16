@@ -380,7 +380,7 @@ a:hover { color: var(--accent-2); }
 /* ── Hero ─────────────────────────────────────────────── */
 .hero {
   position: relative;
-  padding: 9rem 0 5rem;
+  padding: 9rem 0 0rem;
   overflow: hidden;
 }
 .hero-inner {

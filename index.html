@@ -27,10 +27,6 @@
 <!-- Navbar — JS populates #nav-links based on context -->
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-inner">
-    <a id="nav-back" href="works.html" class="nav-back" style="display:none;">
-      <span class="back-arrow">←</span>
-      <span class="back-label"></span>
-    </a>
     <a href="index.html" class="navbar-logo">
       <span class="navbar-logo-dot"></span>
       <span id="logo-text"></span>
@@ -57,8 +53,8 @@
     </h1>
     <p class="hero-subtitle">
       Ensuring network security is vital to safeguarding network systems
-      and preventing cyberattacks. We deeply explore the security of diverse
-      network protocols through formal analysis and intelligent approaches.
+      and preventing cyberattacks. We study diverse
+      network protocols (including OSPF, ISIS, BABEL, BGP, etc.) through formal analysis and intelligent approaches.
     </p>
 
     <div class="stats-bar">
@@ -67,40 +63,11 @@
         <div class="stat-label">Protocol Bugs Found</div>
       </div>
       <div class="stat-item">
-        <div class="stat-value c2">12</div>
+        <div class="stat-value c2">12+</div>
         <div class="stat-label">Protocols Analyzed</div>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- What We Do -->
-<section class="section">
-  <div class="section-inner">
-    <h2 class="section-title reveal">
-      <span class="gradient-text">What We Do</span>
-    </h2>
-    <div class="split-grid">
-      <div class="card flat reveal">
-        <h3 style="margin:0 0 1rem;font-size:1.1rem;">🔬 What We Explore</h3>
-        <p style="margin:0;color:var(--text-secondary);line-height:1.8;">
-          We explore routing protocol security through both traditional formal
-          analysis and intelligent approaches, grounded in fuzz testing and binary
-          analysis. Our compiler-based tools — static and dynamic analysis, automated
-          test generation — uncover vulnerabilities in real-world network systems.
-        </p>
-      </div>
-      <div class="card flat reveal">
-        <h3 style="margin:0 0 1rem;font-size:1.1rem;">🛠️ Real-World Impact</h3>
-        <p style="margin:0;color:var(--text-secondary);line-height:1.8;">
-          Our techniques have detected both general memory safety issues — such as
-          memory leaks and buffer overruns — and, critically, silent domain-specific
-          network breaches that cause no apparent symptoms at runtime. Dozens of
-          confirmed fixes have landed in major open-source protocol stacks.
-        </p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -133,23 +100,6 @@
   </div>
 </section>
 
-<!-- News -->
-<section class="section" id="news">
-  <div class="section-inner">
-    <h2 class="section-title reveal">
-      <span class="gradient-text">Latest News</span>
-    </h2>
-    <div class="card flat reveal">
-      <ul class="news-list">
-        <li class="news-item">🎉 <span><span class="news-date">(05/2026)</span> SPAR accepted to <strong>USENIX Security 2026</strong>.</span></li>
-        <li class="news-item">🎉 <span><span class="news-date">(05/2025)</span> ToDiff accepted to <strong>CCS 2025</strong>.</span></li>
-        <li class="news-item">🎉 <span><span class="news-date">(03/2025)</span> ToDiff now supports RIP, BABEL, and OpenFabric.</span></li>
-        <li class="news-item">📄 <span><span class="news-date">(01/2025)</span> Preprint: <em>Validating IGPs via Equivalent Topology Synthesis</em>.</span></li>
-        <li class="news-item">🔍 <span><span class="news-date">(12/2024)</span> ToDiff detected 26 zero-day bugs in OSPF and IS-IS.</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
 
 <footer class="footer">
   <div class="footer-brand">The Lab for Compiler and Security Technology</div>
