@@ -85,7 +85,7 @@
     } else {
       // ── Lab context ──
       if (backBtn) backBtn.style.display = 'none';
-      if (logoText) logoText.textContent = 'NS Lab';
+      if (logoText) logoText.textContent = '';
       var logoLink = document.querySelector('.navbar-logo');
       if (logoLink) logoLink.href = 'index.html';
 
