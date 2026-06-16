@@ -35,9 +35,8 @@
 
   var LAB_NAV = [
     { label: 'Home',        href: 'index.html' },
-    { label: 'Works',       href: 'works.html' },
     { label: 'Bug Reports', href: 'bugreports.html' },
-    { label: 'People',      href: 'people.html' }
+    { label: 'Team',      href: 'people.html' }
   ];
 
   /* ── Detect current context ─────────────────────────── */
