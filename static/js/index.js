@@ -65,6 +65,7 @@
       var cfg = PROJECTS[project];
       if (backBtn) {
         backBtn.style.display = 'flex';
+        backBtn.href='index.html'
       }
       if (logoText) logoText.textContent = cfg.name;
       // Update logo link to project base page
