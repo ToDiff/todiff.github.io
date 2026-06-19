@@ -19,8 +19,8 @@
       name: 'ToDiff',
       tabs: [
         { label: 'Overview', href: 'todiff.html' },
-        { label: 'Docs',     href: 'documentation.html' },
-        { label: 'Support',  href: 'support.html' }
+        { label: 'Docs',     href: 'todiff-docs.html' },
+        { label: 'Support',  href: 'todiff-support.html' }
       ]
     },
     spar: {
@@ -35,8 +35,8 @@
 
   var LAB_NAV = [
     { label: 'Home',        href: 'index.html' },
-    { label: 'Bug Reports', href: 'bugreports.html' },
-    { label: 'Team',      href: 'people.html' }
+    { label: 'Bug Gallery', href: 'bugreports.html' },
+    { label: 'Team',        href: 'people.html' }
   ];
 
   /* ── Detect current context ─────────────────────────── */
