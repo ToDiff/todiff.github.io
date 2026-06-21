@@ -481,7 +481,7 @@
         "patch/issue link": "https://github.com/holo-routing/holo/pull/95",
         "status": "Fixed",
         "date": "2025-11-26"
-    }
+    },
     {
         "repo_name": "ISIS",
         "codebase": "frrouting",
