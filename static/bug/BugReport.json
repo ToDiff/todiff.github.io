@@ -4,620 +4,968 @@
         "bug_type": "Incorrect setting internal states about area structure",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17101",
         "status": "Fixed",
-        "date": "2024-10-15",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2024-10-15"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect setting internal states about nssa status",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17134",
         "status": "Fixed",
-        "date": "2024-10-18",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2024-10-18"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect setting internal states about area structure",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17183",
         "status": "Fixed",
-        "date": "2024-10-23",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2024-10-23"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect setting internal hello timer ",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/15014",
         "status": "Fixed",
-        "date": "2023-11-14",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2023-11-14"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect setting internal spf hold timer ",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/16851",
         "status": "Fixed",
-        "date": "2024-9-24",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-9-24"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect setting wait timer",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/16954",
         "status": "Fix Approved",
-        "date": "2024-9-29",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-9-29"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect setting dead multiplier timer",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/16954",
         "status": "Fix Approved",
-        "date": "2024-5-7",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-5-7"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no VLINK",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
         "status": "Fixed",
-        "date": "2024-10-29",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-10-29"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no AREANSSA",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
         "status": "Fixed",
-        "date": "2024-10-29",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-10-29"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no AREANSSARANGE",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
         "status": "Fixed",
-        "date": "2024-10-29",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-10-29"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no AREANSSACOST",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
         "status": "Fixed",
-        "date": "2024-10-29",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-10-29"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no AREADEFAULTCOST",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
         "status": "Fixed",
-        "date": "2024-10-29",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-10-29"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no OSPFWRITEMULTIPLIER",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
         "status": "Fixed",
-        "date": "2024-10-29",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-10-29"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no DEFUALTINFORMATION",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
         "status": "Fixed",
-        "date": "2024-10-29",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-10-29"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no DISTANCE",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17189",
         "status": "Fixed",
-        "date": "2024-10-29",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-10-29"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no AREARANGECOST",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17065",
         "status": "Fixed",
-        "date": "2024-10-17",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-10-17"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no AREASHORTCUT",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/17065",
         "status": "Fixed",
-        "date": "2024-10-17",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-10-17"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no DEADINTERVAL",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/16853",
         "status": "Fixed",
-        "date": "2024-9-24",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-9-24"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no ABRTYPE",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/16853",
         "status": "Fixed",
-        "date": "2024-9-24",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-9-24"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no WRITEMULTIPLIER",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/16954",
         "status": "Fixed",
-        "date": "2024-5-7",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-5-7"
     },
     {
         "repo_name": "OSPF",
         "bug_type": "Incorrect parsing the commands of no MAXIMUMPATHS",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/16954",
         "status": "Fixed",
-        "date": "2024-5-7",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-5-7"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Incorrect setting interface's psnp-interval",
         "patch/issue link": "https://github.com/FRRouting/frr/issues/17721",
         "status": "Fixed",
-        "date": "2024-11-25",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-11-25"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Incorrect setting interface's csnp-interval",
         "patch/issue link": "https://github.com/FRRouting/frr/issues/17721",
         "status": "Fixed",
-        "date": "2024-11-25",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-11-25"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Incorrect setting interface's priority",
         "patch/issue link": "https://github.com/FRRouting/frr/issues/17721",
         "status": "Fixed",
-        "date": "2024-11-25",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-11-25"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Incorrect setting interface's hello-interval",
         "patch/issue link": "https://github.com/FRRouting/frr/issues/17721",
         "status": "Fixed",
-        "date": "2024-11-25",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-11-25"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Incorrect setting interface's hello-multiplier",
         "patch/issue link": "https://github.com/FRRouting/frr/issues/17721",
         "status": "Fixed",
-        "date": "2024-11-25",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-11-25"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Incorrect setting interface's circuit-type",
         "patch/issue link": "https://github.com/FRRouting/frr/issues/17721",
         "status": "Fixed",
-        "date": "2024-11-25",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2024-11-25"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Incorrect ignoring some router neighbors",
         "patch/issue link": "https://github.com/FRRouting/frr/issues/18556",
         "status": "Confirmed",
-        "date": "2025-4-1",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2025-4-1"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Incorrect building routing loop",
         "patch/issue link": "https://github.com/FRRouting/frr/issues/17766",
         "status": "Pending",
-        "date": "2025-1-4",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2025-1-4"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Incorrect resetting hello timer",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/18311",
         "status": "Fixed",
-        "date": "2025-3-25",
-        "Bug Num": "1",
-        "sort_weight": 30
+        "date": "2025-3-25"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Incorrect 3-Way-Handshake on P2P links",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/18590",
         "status": "Fix Approved",
-        "date": "2025-4-6",
-        "Bug Num": "1",
-        "sort_weight": 30
+        "date": "2025-4-6"
     },
     {
         "repo_name": "RIP",
         "bug_type": "Incorrect parsing the command of IPRIPSENDVERSION/IPRIPRECEIVEVERSION",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/18217",
         "status": "Fix Approved",
-        "date": "2025-2-21",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2025-2-21"
     },
     {
         "repo_name": "RIP",
         "bug_type": "Incorrect resetting split-horizon poisoned-reverse",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/18217",
         "status": "Fixed",
-        "date": "2025-2-25",
-        "Bug Num": "1",
-        "sort_weight": 40
+        "date": "2025-2-25"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Incorrect resetting wired/wireless status",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/18413",
         "status": "Fixed",
-        "date": "2025-3-18",
-        "Bug Num": "1",
-        "sort_weight": 40
+        "date": "2025-3-18"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Incorrect resetting hello timer",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/18448",
         "status": "Fixed",
-        "date": "2025-3-21",
-        "Bug Num": "1",
-        "sort_weight": 10
+        "date": "2025-3-21"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Incorrect recalcualting interface when interface is down",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/18495",
         "status": "Fix Approved",
-        "date": "2025-3-25",
-        "Bug Num": "1",
-        "sort_weight": 40
+        "date": "2025-3-25"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Incorrect remaning xroutes when redistribution is disabled",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/18531",
         "status": "Confirmed",
-        "date": "2025-3-28",
-        "Bug Num": "1",
-        "sort_weight": 40
+        "date": "2025-3-28"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Missing parameter check in update message",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Missing router_id validation in router_id message",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Missing router_id validation in update message",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Incorrect handling of reserved field in ack_req",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Incorrect handling of reserved field in ihu",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Incorrect handling of reserved field in mh_request",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Missing interval check in msg_ack_req",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Fails to skip full Hello TLV for mandatory subtlv",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Fails to skip full IHU TLV for mandatory subtlv",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Missing subtlv logic in msg_ack_req",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Missing subtlv logic in msg_ack",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Missing subtlv logic in router_id",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BABEL",
         "bug_type": "Missing subtlv logic in next_hop",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20339",
         "status": "Fixed",
-        "date": "2025-12-29",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-29"
     },
     {
         "repo_name": "BFD",
         "bug_type": "Incorrect packet discard rules for zero discriminator",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20324",
         "status": "Fix Confirmed",
-        "date": "2025-12-23",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-23"
     },
     {
         "repo_name": "BFD",
         "bug_type": "Missing check to reject zero discriminator packets",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20324",
         "status": "Fix Confirmed",
-        "date": "2025-12-23",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-23"
     },
     {
         "repo_name": "BFD",
         "bug_type": "State updated before authentication success",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20324",
         "status": "Fix Confirmed",
-        "date": "2025-12-23",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-23"
     },
     {
         "repo_name": "BFD",
         "bug_type": "Incorrect length check during authentication",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20324",
         "status": "Fix Confirmed",
-        "date": "2025-12-23",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-23"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Memory leak in ALSA ext-subtlv error path 1",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20333",
         "status": "Fixed",
-        "date": "2025-12-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-26"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Memory leak in ALSA ext-subtlv error path 2",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20333",
         "status": "Fixed",
-        "date": "2025-12-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-26"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Memory leak in ALSA ext-subtlv error path 3",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20333",
         "status": "Fixed",
-        "date": "2025-12-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-26"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Integer underflow in subsubtlv parsing",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20333",
         "status": "Fixed",
-        "date": "2025-12-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-26"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Missing SRv6 SID length validation",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20333",
         "status": "Fixed",
-        "date": "2025-12-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-26"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Fails to skip unaligned remainder bytes 1",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20333",
         "status": "Fixed",
-        "date": "2025-12-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-26"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Fails to skip unaligned remainder bytes 2",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20333",
         "status": "Fixed",
-        "date": "2025-12-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-26"
     },
     {
         "repo_name": "ISIS",
         "bug_type": "Memory leak in unpack_tlv_router_cap",
         "patch/issue link": "https://github.com/FRRouting/frr/pull/20333",
         "status": "Fixed",
-        "date": "2025-12-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-12-26"
     },
     {
         "repo_name": "BFD",
         "bug_type": "Incorrect length check",
         "patch/issue link": "https://github.com/holo-routing/holo/pull/95",
         "status": "Fixed",
-        "date": "2025-11-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-11-26"
     },
     {
         "repo_name": "BFD",
         "bug_type": "Version checked after session lookup",
         "patch/issue link": "https://github.com/holo-routing/holo/pull/95",
         "status": "Fixed",
-        "date": "2025-11-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-11-26"
     },
     {
         "repo_name": "BFD",
         "bug_type": "detect_mult checked after session lookup",
         "patch/issue link": "https://github.com/holo-routing/holo/pull/95",
         "status": "Fixed",
-        "date": "2025-11-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-11-26"
     },
     {
         "repo_name": "BFD",
         "bug_type": "Packet state checked after session lookup",
         "patch/issue link": "https://github.com/holo-routing/holo/pull/95",
         "status": "Fixed",
-        "date": "2025-11-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-11-26"
     },
     {
         "repo_name": "BFD",
         "bug_type": "my_discr checked after session lookup",
         "patch/issue link": "https://github.com/holo-routing/holo/pull/95",
         "status": "Fixed",
-        "date": "2025-11-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-11-26"
     },
     {
         "repo_name": "BFD",
         "bug_type": "Multihop bit checked after session lookup",
         "patch/issue link": "https://github.com/holo-routing/holo/pull/95",
         "status": "Fixed",
-        "date": "2025-11-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-11-26"
     },
     {
         "repo_name": "BFD",
         "bug_type": "Missing length check for authenticated session",
         "patch/issue link": "https://github.com/holo-routing/holo/pull/95",
         "status": "Fixed",
-        "date": "2025-11-26",
-        "Bug Num": "1",
-        "sort_weight": 20
+        "date": "2025-11-26"
+    }
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3008 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3023 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3026 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3029 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3031 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3049 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3070 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3073 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3074 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3076 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3100 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3101 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3115 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3020 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3045 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3054 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3061 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3066 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3092 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3097 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3107 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "assertion failure frr/isisd/isis_tlvs.c at Line 3110 (18ed776)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10507",
+        "status": "Fixed",
+        "date": "2022-02-06",
+        "CVE": "CVE-2022-26125"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow isisd/isis_nb_notifications.c at Line 248 (eef8006)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10505",
+        "status": "Fixed",
+        "date": "2022-02-05",
+        "CVE": "CVE-2022-26126"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow isisd/isis_nb_notifications.c at Line 273 (eef8006)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10505",
+        "status": "Fixed",
+        "date": "2022-02-05",
+        "CVE": "CVE-2022-26126"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow isisd/isis_nb_notifications.c at Line 297 (eef8006)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10505",
+        "status": "Fixed",
+        "date": "2022-02-05",
+        "CVE": "CVE-2022-26126"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow isisd/isis_nb_notifications.c at Line 364 (eef8006)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10505",
+        "status": "Fixed",
+        "date": "2022-02-05",
+        "CVE": "CVE-2022-26126"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow isisd/isis_nb_notifications.c at Line 387 (eef8006)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10505",
+        "status": "Fixed",
+        "date": "2022-02-05",
+        "CVE": "CVE-2022-26126"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow isisd/isis_nb_notifications.c at Line 470 (eef8006)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10505",
+        "status": "Fixed",
+        "date": "2022-02-05",
+        "CVE": "CVE-2022-26126"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow isisd/isis_nb_notifications.c at Line 498 (eef8006)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10505",
+        "status": "Fixed",
+        "date": "2022-02-05",
+        "CVE": "CVE-2022-26126"
+    },
+    {
+        "repo_name": "ISIS",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow isisd/isis_nb_notifications.c at Line 528 (eef8006)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10505",
+        "status": "Fixed",
+        "date": "2022-02-05",
+        "CVE": "CVE-2022-26126"
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow babeld/message.c at Line 300 (3d1ff4b)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10487",
+        "status": "Fixed",
+        "date": "2022-02-03",
+        "CVE": "CVE-2022-26127"
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow babeld/message.c at Line 309 (3d1ff4b)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10487",
+        "status": "Fixed",
+        "date": "2022-02-03",
+        "CVE": "CVE-2022-26127"
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow babeld/message.c at Line 314 (ab68283)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10502",
+        "status": "Fixed",
+        "date": "2022-02-04",
+        "CVE": "CVE-2022-26128"
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow babeld/message.c at Line 305 (ab68283)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10502",
+        "status": "Fixed",
+        "date": "2022-02-04",
+        "CVE": "CVE-2022-26128"
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow babeld/message.c at Line 253 (e743c1b)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10503",
+        "status": "Fixed",
+        "date": "2022-02-04",
+        "CVE": "CVE-2022-26129"
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow babeld/message.c at Line 254 (e743c1b)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10503",
+        "status": "Fixed",
+        "date": "2022-02-04",
+        "CVE": "CVE-2022-26129"
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow babeld/message.c at Line 242 (e743c1b)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10503",
+        "status": "Fixed",
+        "date": "2022-02-04",
+        "CVE": "CVE-2022-26129"
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow babeld/message.c at Line 207 (e743c1b)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10503",
+        "status": "Fixed",
+        "date": "2022-02-04",
+        "CVE": "CVE-2022-26129"
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow babeld/message.c at Line 196 (e743c1b)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10503",
+        "status": "Fixed",
+        "date": "2022-02-04",
+        "CVE": "CVE-2022-26129"
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow babeld/message.c at Line 168 (e743c1b)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10503",
+        "status": "Fixed",
+        "date": "2022-02-04",
+        "CVE": "CVE-2022-26129"
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow babeld/message.c at Line 147 (e743c1b)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10503",
+        "status": "Fixed",
+        "date": "2022-02-04",
+        "CVE": "CVE-2022-26129"
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow babeld/message.c at Line 137 (e743c1b)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10503",
+        "status": "Fixed",
+        "date": "2022-02-04",
+        "CVE": "CVE-2022-26129"
+    },
+    {
+        "repo_name": "OSDP",
+        "codebase": "libosdp",
+        "bug_type": "buffer overflow libosdp/src/osdp_phy.c at Line 311 (a3eb794)",
+        "patch/issue link": "https://github.com/osdp-dev/libosdp/issues/81",
+        "status": "Fixed",
+        "date": "2022-04-15",
+        "CVE": "CVE-2022-30497"
+    },
+    {
+        "repo_name": "OSDP",
+        "codebase": "libosdp",
+        "bug_type": "buffer overflow libosdp/src/osdp_phy.c at Line 321 (a3eb794)",
+        "patch/issue link": "https://github.com/osdp-dev/libosdp/issues/81",
+        "status": "Fixed",
+        "date": "2022-04-15",
+        "CVE": "CVE-2022-30497"
+    },
+    {
+        "repo_name": "OSDP",
+        "codebase": "libosdp",
+        "bug_type": "SEGV on unknown address libosdp/src/osdp_file.c at Line 38 (a3eb794)",
+        "patch/issue link": "https://github.com/osdp-dev/libosdp/issues/82",
+        "status": "Fixed",
+        "date": "2022-04-15",
+        "CVE": "CVE-2022-30498"
+    },
+    {
+        "repo_name": "OSDP",
+        "codebase": "libosdp",
+        "bug_type": "SEGV on unknown address libosdp/src/osdp_file.c at Line 87 (a3eb794)",
+        "patch/issue link": "https://github.com/osdp-dev/libosdp/issues/82",
+        "status": "Fixed",
+        "date": "2022-04-15",
+        "CVE": "CVE-2022-30498"
+    },
+    {
+        "repo_name": "OSDP",
+        "codebase": "libosdp",
+        "bug_type": "SEGV on unknown address libosdp/src/osdp_file.c at Line 124 (a3eb794)",
+        "patch/issue link": "https://github.com/osdp-dev/libosdp/issues/82",
+        "status": "Fixed",
+        "date": "2022-04-15",
+        "CVE": "CVE-2022-30498"
+    },
+    {
+        "repo_name": "OSDP",
+        "codebase": "libosdp",
+        "bug_type": "SEGV on unknown address libosdp/src/osdp_file.c at Line 181 (a3eb794)",
+        "patch/issue link": "https://github.com/osdp-dev/libosdp/issues/82",
+        "status": "Fixed",
+        "date": "2022-04-15",
+        "CVE": "CVE-2022-30498"
+    },
+    {
+        "repo_name": "SSQ",
+        "codebase": "libssq",
+        "bug_type": "buffer overflow libssq/src/buf.c at Line 21 (2d33303)",
+        "patch/issue link": "https://github.com/BinaryAlien/libssq/issues/1",
+        "status": "Fixed",
+        "date": "2022-04-15",
+        "CVE": ""
+    },
+    {
+        "repo_name": "SSQ",
+        "codebase": "libssq",
+        "bug_type": "buffer overflow libssq/src/buf.c at Line 107 (2d33303)",
+        "patch/issue link": "https://github.com/BinaryAlien/libssq/issues/1",
+        "status": "Fixed",
+        "date": "2022-04-15",
+        "CVE": ""
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "infinite loops in babeld/message.c at Line 442 (261e70c)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/11808",
+        "status": "Fixed",
+        "date": "2022-08-16",
+        "CVE": ""
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "infinite loops in babeld/message.c at Line 454 (261e70c)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/11808",
+        "status": "Fixed",
+        "date": "2022-08-16",
+        "CVE": ""
+    },
+    {
+        "repo_name": "BABEL",
+        "codebase": "frrouting",
+        "bug_type": "infinite loops in babeld/message.c at Line 472 (261e70c)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/11808",
+        "status": "Fixed",
+        "date": "2022-08-16",
+        "CVE": ""
+    },
+    {
+        "repo_name": "BFD",
+        "codebase": "frrouting",
+        "bug_type": "buffer overflow in bfdd/control.c at Line 415 (cc9f21d)",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/10760",
+        "status": "Fixed",
+        "date": "2022-03-09",
+        "CVE": ""
     }
 ]
