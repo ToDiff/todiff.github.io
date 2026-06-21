@@ -89,10 +89,10 @@
     try {
       const r = await fetch("static/bug/BugReport.json");
       const bugs = await r.json();
-      bugs.sort((a, b) => (b.sort_weight - a.sort_weight) || (new Date(b.date) - new Date(a.date)));
+      bugs.sort((a, b) => (new Date(b.date) - new Date(a.date)));
       const tbody = document.getElementById("bug-report-table");
       const counts = { "Fixed":0, "Confirmed":0, "Fix Approved":0, "Pending":0 };
-      bugs.forEach(b => { if (counts.hasOwnProperty(b.status)) counts[b.status] += parseInt(b["Bug Num"], 10); });
+      bugs.forEach(b => { if (counts.hasOwnProperty(b.status)) counts[b.status] += 1; });
       document.getElementById("fixed-count").textContent = counts["Fixed"];
       document.getElementById("confirmed-count").textContent = counts["Confirmed"];
       document.getElementById("reproduced-count").textContent = counts["Fix Approved"];
