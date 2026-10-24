@@ -138,6 +138,12 @@ a.rpib-contact-email {
   font-size: 0.85rem;
 }
 
+.rpib-table-hint {
+  margin: 0 0 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
 .rpib-table-wrapper {
   max-height: 70vh;
   overflow: auto;
