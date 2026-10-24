@@ -56,7 +56,7 @@
       if (idIndex < 0 || linkIndex < 0) throw new Error('Missing ID or link column.');
 
       var columns = headers.map(function (label, index) {
-        return { label: label === 'commit（第几个commit）' ? 'Commit' : label, index: index };
+        return { label: label === 'commit（第几个commit）' ? 'Commit ID' : label, index: index };
       }).filter(function (column) {
         return column.label && !['link', 'collected by'].includes(column.label.toLowerCase());
       });
