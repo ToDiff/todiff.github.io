@@ -86,7 +86,8 @@
         <p id="result-count" role="status" aria-live="polite"></p>
       </div>
 
-      <div class="table-wrapper rpib-table-wrapper" tabindex="0" role="region" aria-label="RPIB bug reports; scroll to view all columns and rows">
+      <p id="bug-report-hint" class="rpib-table-hint">Click the <strong>ID</strong> to access the bug report.</p>
+      <div class="table-wrapper rpib-table-wrapper" tabindex="0" role="region" aria-label="RPIB bug reports; scroll to view all columns and rows" aria-describedby="bug-report-hint">
         <table class="rpib-table" aria-label="RPIB bug reports">
           <thead><tr id="bug-report-headings"></tr></thead>
           <tbody id="bug-report-table"></tbody>
