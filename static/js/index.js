@@ -15,6 +15,12 @@
      Add new projects here — the navbar auto-adapts.
      ─────────────────────────────────────────────────────── */
   var PROJECTS = {
+    rpib: {
+      name: 'RPIB',
+      tabs: [
+        { label: 'Bug Gallery', href: 'rpib.html' }
+      ]
+    },
     todiff: {
       name: 'ToDiff',
       tabs: [

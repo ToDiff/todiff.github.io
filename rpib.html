@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <script>(function(){var t=localStorage.getItem("cs-lab-theme");if(t==="light")document.documentElement.setAttribute("data-theme","light");})()</script>
+  <meta name="description" content="An empirical study of 1,255 real-world routing protocol implementation bugs in FRRouting, BIRD, and Holo, characterizing their types, root causes, triggers, and security impacts.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RPIB gallery</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/rpib.css">
+  <script defer src="static/js/index.js"></script>
+  <script defer src="static/js/rpib.js"></script>
+</head>
+<body data-project="rpib">
+
+<div class="bg-pattern"></div>
+<div class="site-content">
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-inner">
+    <a id="nav-back" href="index.html" class="nav-back">
+      <span class="back-arrow">←</span> Home
+    </a>
+    <a href="rpib.html" class="navbar-logo">
+      <span class="navbar-logo-dot"></span>
+      <span id="logo-text">RPIB</span>
+    </a>
+    <ul id="nav-links" class="navbar-links"></ul>
+    <div class="navbar-actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <span id="theme-toggle-icon">☀️</span>
+      </button>
+      <button class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-label">NDSS 2027</span>
+    <h1 class="hero-title">
+      <span class="hero-title-line gradient-text">RPIB gallery</span>
+    </h1>
+    <p class="hero-subtitle">An empirical study of 1,255 real-world routing protocol implementation bugs in FRRouting, BIRD, and Holo, characterizing their types, root causes, triggers, and security impacts.</p>
+    <div class="flex justify-center gap-2 rpib-paper-links">
+      <button type="button" class="btn btn-primary" disabled title="Paper link coming soon">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <path d="M14 2v6h6M8 13h8M8 17h6"/>
+        </svg>
+        Paper
+      </button>
+    </div>
+    <aside class="rpib-access-notice" aria-labelledby="reproducer-access-title">
+      <h2 id="reproducer-access-title">Reproducer Dataset: Access by Request</h2>
+      <p>For ethical reasons, <strong>we do not publicly release the reproducer dataset</strong>, as it could be misused to exploit vulnerabilities and launch attacks against deployed routing infrastructure.</p>
+      <p>To request access, please email <a class="rpib-contact-email" href="mailto:yufanzhou@smail.nju.edu.cn?subject=RPIB%20Reproducer%20Dataset%20Access%20Request">yufanzhou@smail.nju.edu.cn</a> and include your <strong>full name, institutional affiliation, email address, and intended use</strong>.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="stat-panels">
+      <div class="stat-panel panel-fixed"><div class="panel-count" id="bug-count">—</div><div class="panel-label">Bugs</div></div>
+      <div class="stat-panel panel-fix-approved"><div class="panel-count" id="repository-count">—</div><div class="panel-label">Repositories</div></div>
+      <div class="stat-panel panel-confirmed"><div class="panel-count" id="protocol-count">—</div><div class="panel-label">Protocols</div></div>
+      <div class="stat-panel panel-pending"><div class="panel-count" id="bug-type-count">—</div><div class="panel-label">Bug Types</div></div>
+    </div>
+
+    <div id="loading-message" class="loading" role="status">Loading bug reports...</div>
+
+    <div id="bug-gallery" hidden>
+      <div class="rpib-controls">
+        <div class="rpib-search">
+          <label for="bug-search">Search bugs</label>
+          <input type="search" id="bug-search" placeholder="ID, repository, protocol, root cause...">
+        </div>
+        <p id="result-count" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="table-wrapper rpib-table-wrapper" tabindex="0" role="region" aria-label="RPIB bug reports; scroll to view all columns and rows">
+        <table class="rpib-table" aria-label="RPIB bug reports">
+          <thead><tr id="bug-report-headings"></tr></thead>
+          <tbody id="bug-report-table"></tbody>
+        </table>
+      </div>
+    </div>
+    <noscript><p>Enable JavaScript to view the bug gallery.</p></noscript>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-brand">The Lab for Compiler and Security Technology</div>
+  <div class="footer-copy">
+    School of Computer Science · Nanjing University &nbsp;|&nbsp;
+    <a href="mailto:qingkaishi@nju.edu.cn">Contact</a>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

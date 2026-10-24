@@ -1,0 +1,180 @@
+html {
+  color-scheme: dark;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+}
+
+html,
+.rpib-table-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-muted) var(--bg-secondary);
+}
+
+html::-webkit-scrollbar,
+.rpib-table-wrapper::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+html::-webkit-scrollbar-track,
+html::-webkit-scrollbar-corner,
+.rpib-table-wrapper::-webkit-scrollbar-track,
+.rpib-table-wrapper::-webkit-scrollbar-corner {
+  background: var(--bg-secondary);
+}
+
+html::-webkit-scrollbar-thumb,
+.rpib-table-wrapper::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border: 2px solid var(--bg-secondary);
+  border-radius: 999px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+.rpib-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+.rpib-paper-links {
+  margin-bottom: 2rem;
+}
+
+.rpib-paper-links .btn:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.rpib-paper-links .btn:disabled:hover {
+  background: var(--accent-1);
+  box-shadow: none;
+  transform: none;
+}
+
+.rpib-access-notice {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-left: 4px solid var(--accent-amber);
+  border-radius: var(--radius-md);
+  background: rgba(245, 158, 11, 0.08);
+  text-align: left;
+}
+
+.rpib-access-notice h2 {
+  margin: 0 0 0.65rem;
+  color: var(--accent-amber);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.4;
+}
+
+.rpib-access-notice p {
+  margin: 0.6rem 0 0;
+  color: var(--text-primary);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.rpib-contact-email {
+  color: var(--accent-1);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+a.rpib-contact-email {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.rpib-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.rpib-search {
+  flex: 1;
+  max-width: 32rem;
+  min-width: 0;
+}
+
+.rpib-search label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.rpib-search input {
+  width: 100%;
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  background: var(--bg-input);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.rpib-search input::placeholder {
+  color: var(--text-muted);
+}
+
+.rpib-search input:focus-visible,
+.rpib-table-wrapper:focus-visible {
+  outline: 2px solid var(--accent-1);
+  outline-offset: 3px;
+}
+
+#result-count {
+  margin: 0 0 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.rpib-table-wrapper {
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.rpib-table {
+  min-width: 1900px;
+}
+
+.rpib-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.rpib-table th,
+.rpib-table td {
+  padding: 0.85rem 1rem;
+  vertical-align: top;
+}
+
+.rpib-table td {
+  overflow-wrap: break-word;
+}
+
+.rpib-table td:first-child {
+  white-space: nowrap;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@media screen and (max-width: 480px) {
+  .rpib-access-notice {
+    padding: 1.25rem;
+  }
+
+  .rpib-search {
+    flex-basis: 100%;
+  }
+}
