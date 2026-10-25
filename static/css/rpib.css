@@ -41,17 +41,6 @@ html::-webkit-scrollbar-thumb:hover,
   margin-bottom: 2rem;
 }
 
-.rpib-paper-links .btn:disabled {
-  opacity: 0.75;
-  cursor: not-allowed;
-}
-
-.rpib-paper-links .btn:disabled:hover {
-  background: var(--accent-1);
-  box-shadow: none;
-  transform: none;
-}
-
 .rpib-access-notice {
   max-width: 900px;
   margin: 0 auto;
