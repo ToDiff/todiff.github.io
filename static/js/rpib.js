@@ -49,7 +49,8 @@
       if (rows.length < 2) throw new Error('The bug dataset is empty.');
 
       var headers = rows.shift().map(function (header) {
-        return header.replace(/\s+/g, ' ').trim();
+        var label = header.replace(/\s+/g, ' ').trim();
+        return label.toLowerCase() === 'id' ? 'ID' : label;
       });
       var idIndex = headers.indexOf('ID');
       var linkIndex = headers.findIndex(function (header) { return header.toLowerCase() === 'link'; });
