@@ -152,6 +152,12 @@
     }, 200);
   }
 
+  function resetPageTransition() {
+    transitioning = false;
+    var overlay = document.getElementById('pt-overlay');
+    if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay);
+  }
+
   function initPageTransitions() {
     document.addEventListener('click', function (e) {
       var link = e.target.closest('a');
@@ -165,16 +171,9 @@
       navigateTo(href);
     });
 
-    // Fade out overlay on page load
-    var overlay = document.getElementById('pt-overlay');
-    if (overlay) {
-      setTimeout(function () {
-        overlay.classList.remove('active');
-        setTimeout(function () {
-          if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
-        }, 300);
-      }, 80);
-    }
+    // Cached history restores fire pageshow without rerunning initialization.
+    window.addEventListener('pageshow', resetPageTransition);
+    resetPageTransition();
   }
 
   /* ── Scroll Reveal ──────────────────────────────────── */

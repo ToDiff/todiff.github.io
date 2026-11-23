@@ -136,27 +136,24 @@ a.rpib-contact-email {
 .rpib-table-wrapper {
   max-height: 70vh;
   overflow: auto;
+  overscroll-behavior-x: none;
 }
 
 .rpib-table {
-  min-width: 1900px;
+  min-width: 96rem;
 }
 
 .rpib-table thead th {
   position: sticky;
   top: 0;
   z-index: 1;
-  white-space: nowrap;
 }
 
 .rpib-table th,
 .rpib-table td {
-  padding: 0.85rem 1rem;
+  padding: 0.85rem 0.75rem;
   vertical-align: top;
-}
-
-.rpib-table td {
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .rpib-table td:first-child,
@@ -166,6 +163,11 @@ a.rpib-contact-email {
 }
 
 @media screen and (max-width: 480px) {
+  .nav-back,
+  .navbar-logo {
+    margin-right: 1rem;
+  }
+
   .rpib-access-notice {
     padding: 1.25rem;
   }
