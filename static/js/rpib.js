@@ -60,7 +60,7 @@
     var pullUrl = pullRequest[0];
     var commits = Array.isArray(commitLinks[pullUrl]) ? commitLinks[pullUrl] : [];
     value.split('+').forEach(function (part, index) {
-      if (index) cell.appendChild(document.createTextNode('+'));
+      if (index) cell.append('+', document.createElement('wbr'));
       var ordinal = part.trim();
       var position = Number(ordinal) - 1;
       var matched = /^\d+$/.test(ordinal) && position >= 0 && position < commits.length;
@@ -138,6 +138,7 @@
       columns.forEach(function (column) {
         var cell = document.createElement('th');
         cell.scope = 'col';
+        cell.dataset.column = column.label;
         cell.textContent = column.label;
         headingRow.appendChild(cell);
       });
@@ -160,6 +161,11 @@
               appendLink(cell, value, href);
             } else if (column.index === commitIndex && value && /^https?:\/\//i.test(href)) {
               appendCommitLinks(cell, value, href, commitLinks);
+            } else if (value.includes(',')) {
+              value.split(',').forEach(function (part, index) {
+                if (index) cell.append(',', document.createElement('wbr'));
+                cell.append(part);
+              });
             } else {
               cell.textContent = value;
             }

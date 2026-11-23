@@ -140,7 +140,8 @@ a.rpib-contact-email {
 }
 
 .rpib-table {
-  min-width: 96rem;
+  width: max(100%, 82.5rem);
+  table-layout: fixed;
 }
 
 .rpib-table thead th {
@@ -149,17 +150,33 @@ a.rpib-contact-email {
   z-index: 1;
 }
 
+.rpib-table th[data-column="ID"] { width: 3.5rem; }
+.rpib-table th[data-column="Commit ID"] { width: 4.75rem; }
+.rpib-table th[data-column="Repository"] { width: 6.625rem; }
+.rpib-table th[data-column^="RQ1:"] { width: 8.25rem; }
+.rpib-table th[data-column^="RQ1-2:"],
+.rpib-table th[data-column^="RQ3-3:"] { width: 4.5rem; }
+.rpib-table th[data-column^="RQ2:"] { width: 7rem; }
+.rpib-table th[data-column^="RQ3-1:"] { width: 6.5rem; }
+.rpib-table th[data-column^="RQ3-2:"] { width: 5.25rem; }
+.rpib-table th[data-column^="RQ4-2:"] { width: 13.5rem; }
+
 .rpib-table th,
 .rpib-table td {
-  padding: 0.85rem 0.75rem;
+  padding: 0.55rem 0.65rem;
+  line-height: 1.45;
   vertical-align: top;
   overflow-wrap: anywhere;
 }
 
 .rpib-table td:first-child,
 .rpib-table td:nth-child(2) {
-  white-space: nowrap;
   font-family: 'JetBrains Mono', monospace;
+}
+
+.rpib-table td:first-child,
+.rpib-table td:nth-child(2) a {
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 480px) {
